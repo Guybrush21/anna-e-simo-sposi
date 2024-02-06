@@ -34,11 +34,7 @@ jobs:
       - name: Build with Astro
         run: "npm run build"          
         working-directory: ${{ env.BUILD_PATH }}
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: ${{ env.BUILD_PATH }}/dist
-
+    
   deploy:    
     needs: build
     runs-on: ubuntu-latest
@@ -52,7 +48,7 @@ jobs:
           # ftp server
           server: ${{secrets.FTP_SERVER}}
           # ftp username
-          username: ${{secrets.FTP_USERNAME}}
+          username: ${{secrets.FTP_USER}}
           # ftp password
           password: ${{secrets.FTP_PASSWORD}}
           # Server port to connect to (read your web hosts docs)
