@@ -1,8 +1,16 @@
 /** @type {import('tailwindcss').Config} */
+const defaultTheme = require("tailwindcss/defaultTheme");
+
 export default {
   content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
   theme: {
     extend: {
+      backgroundImage: {
+        annaesimo: "url(/public/as-header.jpg)",
+      },
+      fontFamily: {
+        sans: ["FreestyleScript", "monospace", ...defaultTheme.fontFamily.sans],
+      },
       colors: {
         olivine: {
           50: "#f3f9ec",

@@ -6,14 +6,12 @@ module.exports = {
   extends: ["eslint:recommended", "plugin:astro/recommended", "prettier"],
   overrides: [
     {
-      env: {
-        node: true,
-      },
-      files: [".eslintrc.{js,cjs}", "*.astro"],
+      files: [".eslintrc.js", "*.astro"],
       parser: "astro-eslint-parser",
-      extraFileExtensions: [".astro"],
       parserOptions: {
         sourceType: "script",
+        parser: "@typescript-eslint/parser",
+        extraFileExtensions: [".astro"],
       },
     },
   ],
@@ -21,5 +19,4 @@ module.exports = {
     ecmaVersion: "latest",
     sourceType: "module",
   },
-  rules: {},
 };
