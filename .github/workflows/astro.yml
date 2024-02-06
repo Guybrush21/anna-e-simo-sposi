@@ -80,6 +80,6 @@ jobs:
           # How verbose should the information be - minimal, standard, or verbose
           #log-level: # optional
           # strict or loose
-          #security: # optional
+          security: loose
           # Timeout in milliseconds for FTP operations
           #timeout: # optional
