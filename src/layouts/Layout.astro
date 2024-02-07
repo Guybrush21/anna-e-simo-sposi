@@ -20,13 +20,10 @@ const { pageTitle } = Astro.props;
       as="style"
       onload="this.onload=null;this.rel='stylesheet'"
     />
-    <noscript
-      ><link
-        href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Pacifico&display=swap"
-        rel="stylesheet"
-      /></noscript
-    >
-    <style is:global>
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap" rel="stylesheet">      <style is:global>
+
       @font-face {
         font-family: "FreestyleScript";
         src: url("/public/fonts/FreestyleScript.ttf") format("truetype");

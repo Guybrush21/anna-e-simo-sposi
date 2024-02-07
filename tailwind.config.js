@@ -9,7 +9,8 @@ export default {
         annaesimo: "url(/public/as-header.jpg)",
       },
       fontFamily: {
-        sans: ["FreestyleScript", "monospace", ...defaultTheme.fontFamily.sans],
+        display: ["FreestyleScript", "monospace", ...defaultTheme.fontFamily.sans],
+        sans: ['"Gamja Flower"', 'sans-serif']
       },
       colors: {
         olivine: {
