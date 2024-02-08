@@ -20,10 +20,13 @@ const { pageTitle } = Astro.props;
       as="style"
       onload="this.onload=null;this.rel='stylesheet'"
     />
- <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap" rel="stylesheet">      <style is:global>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap"
+      rel="stylesheet"
+    />
+    <style is:global>
       @font-face {
         font-family: "FreestyleScript";
         src: url("/public/fonts/FreestyleScript.ttf") format("truetype");
@@ -33,7 +36,7 @@ const { pageTitle } = Astro.props;
     <title>{pageTitle}</title>
     <ViewTransitions />
   </head>
-  <body class="flex-col gap-3 min-h-lvh bg-olivine-50">
+  <body class="flex-col min-h-lvh bg-olivine-50">
     <Header />
     <main>
       <slot />
