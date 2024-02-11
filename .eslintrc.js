@@ -6,7 +6,7 @@ module.exports = {
   extends: ["eslint:recommended", "plugin:astro/recommended", "prettier"],
   overrides: [
     {
-      files: [".eslintrc.js", "*.astro"],
+      files: ["*.astro"],
       parser: "astro-eslint-parser",
       parserOptions: {
         sourceType: "script",
