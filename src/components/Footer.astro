@@ -1,7 +1,10 @@
 ---
+import FlowerNode from "./decors/FlowerNode.astro";
+
 const year = new Date().getFullYear();
 ---
 
-<footer class="flex items-center justify-center">
+<footer class="flex h-screen flex-col items-center justify-center p-10">
+  <FlowerNode class="h-max fill-buttermilk-500" />
   <p>made with ♥</p>
 </footer>

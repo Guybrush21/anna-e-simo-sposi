@@ -3,12 +3,14 @@ import FlowerNode from "./decors/FlowerNode.astro";
 ---
 
 <header
-  class="flex h-[33dvh] w-screen items-end justify-center bg-buttermilk-200 bg-annaesimo bg-contain bg-fixed bg-top md:bg-cover lg:h-screen"
+  class="flex h-[33dvh] w-screen items-center justify-center bg-buttermilk-200 bg-annaesimo bg-contain bg-fixed bg-top md:bg-cover lg:h-screen"
 >
-  <div>
-    <h1 class="font-serif text-4xl text-white">Anna & Simone</h1>
-    <div class="max-md:hidden">
-      <FlowerNode />
-    </div>
+  <div class="flex flex-col items-center justify-center">
+    <h1
+      class="font-display text-6xl text-buttermilk-200 opacity-90 lg:text-8xl"
+    >
+      Anna & Simone
+    </h1>
+    <!-- <FlowerNode class="h-16 fill-buttermilk-100 opacity-40 lg:h-40" /> -->
   </div>
 </header>

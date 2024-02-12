@@ -6,15 +6,15 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        annaesimo: "url(/public/as-header.jpg)",
+        annaesimo: "url(/as-header.jpg)",
       },
       fontFamily: {
         display: [
           "FreestyleScript",
-          "monospace",
+          "Crimson Text",
           ...defaultTheme.fontFamily.sans,
         ],
-        sans: ['"Gamja Flower"', "sans-serif"],
+        sans: ['"Crimson Text"', "sans-serif"],
       },
       colors: {
         buttermilk: {

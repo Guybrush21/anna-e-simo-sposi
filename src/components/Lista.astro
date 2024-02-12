@@ -1,30 +1,31 @@
 ---
 import Card from "./Card.astro";
+import FlowerDivisor from "./decors/FlowerDivisor.astro";
+import FlowerAngle from "./decors/FlowerAngle.astro";
+import Regalo from "./Regalo.astro";
 ---
 
-<div
-  class="flex flex-col items-center justify-center gap-2 border-t-2 border-black p-2"
->
-  <h3 class="text-4xl uppercase">Lista nozze</h3>
-  <div
-    class="flex flex-col justify-around gap-3 border-2 border-black p-5 md:flex-row lg:gap-x-48"
-  >
-    <Card title="In Viaggio" srcImage="/viaggio-sq.png">
-      <p>andremo di qua e di la</p><p>e anche un po di li</p>
-    </Card>
-    <Card title="A casa" srcImage="/acasa.jpg">
-      <p>ci servirebbe un po' di questo e di quello</p>
-    </Card>
-  </div>
-  <div class="flex flex-col justify-center p-3">
-    <p>
-      Siamo felici di condividere con voi il nostro giorno speciale. Se
-      desiderate onorarci con un dono, vi invitiamo gentilmente a contribuire
-      alla nostra lista nozze tramite bonifico bancario all'IBAN seguente:
-    </p><p class="self-center font-mono text-xl">ITH031X000000000000</p>
-    <p>
-      Il vostro amore e sostegno sono il regalo più prezioso che potremmo
-      ricevere in questo momento magico delle nostre vite.
-    </p>
+<div class="flex min-h-screen flex-col items-center justify-center gap-2 p-10">
+  <div class="flex flex-col items-center justify-center">
+    <h3 class="text-4xl">Lista nozze</h3>
+    <div class="relative">
+      <FlowerAngle
+        class="absolute left-0 top-0 ml-[-2rem] mt-[-6rem] h-32 w-32 rotate-180 fill-buttermilk-400 lg:ml-[-10rem] lg:h-64 lg:w-64"
+      />
+      <div class="flex flex-col justify-around gap-3 md:flex-row lg:gap-x-48">
+        <Card title="In Viaggio" srcImage="/viaggio-sq.png">
+          <p>andremo di qua e di la</p><p>e anche un po di li</p>
+        </Card>
+        <Card title="A casa" srcImage="/acasa.jpg">
+          <p>ci servirebbe un po' di questo e di quello</p>
+        </Card>
+        <FlowerAngle
+          class="absolute bottom-0 right-0 mb-[-6rem] mr-[-2rem] h-32 w-32 fill-buttermilk-400 lg:mr-[-10rem] lg:h-64 lg:w-64"
+        />
+      </div>
+    </div>
+    <div class="mt-16">
+      <Regalo />
+    </div>
   </div>
 </div>
