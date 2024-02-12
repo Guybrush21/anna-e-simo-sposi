@@ -1,12 +1,14 @@
 ---
-
+import FlowerNode from "./decors/FlowerNode.astro";
 ---
 
 <header
-  class="bg-olivine-200 bg-fixed md:bg-cover bg-top bg-contain h-[33dvh] lg:h-screen w-screen bg-annaesimo flex items-end justify-center"
+  class="flex h-[33dvh] w-screen items-end justify-center bg-buttermilk-200 bg-annaesimo bg-contain bg-fixed bg-top md:bg-cover lg:h-screen"
 >
   <div>
-    <h1 class="text-4xl text-white font-serif">Anna & Simone</h1>
-    <object data="/flower-node.svg"></object>
+    <h1 class="font-serif text-4xl text-white">Anna & Simone</h1>
+    <div class="max-md:hidden">
+      <FlowerNode />
+    </div>
   </div>
 </header>

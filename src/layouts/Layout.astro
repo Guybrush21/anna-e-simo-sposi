@@ -2,6 +2,7 @@
 import { ViewTransitions } from "astro:transitions";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
+import FlowerNode from "../components/decors/FlowerNode.astro";
 const { pageTitle } = Astro.props;
 ---
 
@@ -36,8 +37,11 @@ const { pageTitle } = Astro.props;
     <title>{pageTitle}</title>
     <ViewTransitions />
   </head>
-  <body class="flex-col min-h-lvh bg-olivine-50">
+  <body class="min-h-lvh flex-col bg-buttermilk-50 text-buttermilk-700">
     <Header />
+    <div>
+      <!-- <FlowerNode /> -->
+    </div>
     <main>
       <slot />
     </main>
