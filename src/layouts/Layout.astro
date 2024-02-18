@@ -34,14 +34,16 @@ const { pageTitle } = Astro.props;
     <style is:global>
       @font-face {
         font-family: "FreestyleScript";
-        src: url("/public/fonts/FreestyleScript.ttf") format("truetype");
+        src: url("/fonts/FreestyleScript.ttf") format("truetype");
       }
     </style>
     <meta name="generator" content={Astro.generator} />
     <title>{pageTitle}</title>
     <ViewTransitions />
   </head>
-  <body class="flex flex-col font-sans text-buttermilk-700">
+  <body
+    class="flex flex-col bg-gradient-to-b from-yellow-100 to-purple-400 font-sans text-buttermilk-700"
+  >
     <Header />
     <main>
       <slot />

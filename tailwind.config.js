@@ -7,6 +7,7 @@ export default {
     extend: {
       backgroundImage: {
         annaesimo: "url(/as-header.jpg)",
+        angle: "url(/lavanda-angle.png)",
       },
       fontFamily: {
         display: [
@@ -31,7 +32,6 @@ export default {
           950: "#421a06",
         },
         lavanda: {
-          DEFAULT: "#8A38A8",
           50: "#FFFFFF",
           100: "#F7F0FA",
           200: "#DEBEE9",

@@ -6,24 +6,46 @@ import Regalo from "./Regalo.astro";
 ---
 
 <div
-  class="flex min-h-screen flex-col items-center justify-center gap-2 bg-gradient-to-b from-buttermilk-50 to-buttermilk-200 p-10"
+  class="flex min-h-screen flex-col items-center justify-center gap-2 p-10 lg:p-40"
 >
-  <div class="flex flex-col items-center justify-center">
-    <h3 class="text-4xl">Lista nozze</h3>
-    <div class="relative">
-      <FlowerAngle
-        class="absolute left-0 top-0 ml-[-2rem] mt-[-6rem] h-32 w-32 rotate-180 fill-buttermilk-400 lg:ml-[-10rem] lg:h-64 lg:w-64"
-      />
-      <div class="flex flex-col justify-around gap-3 md:flex-row lg:gap-x-48">
+  <div class="flex flex-col items-center justify-center text-2xl">
+    <div>
+      <h3 class="mb-4 font-display text-5xl">Lista nozze</h3>
+      <p class="mb-8">
+        La nostra gioia è grande! Non vediamo l'ora di condividere con voi quel
+        giorno per noi così importante. La vostra presenza e vicinanza, il
+        vostro affetto e il vostro sostegno sono il regalo più prezioso che
+        potremo ricevere per iniziare a costruire la nostra famiglia. Se avete
+        piacere di partecipare anche con un dono, ne faremo buon uso…
+      </p>
+      <div
+        class="flex flex-col flex-wrap items-start justify-around gap-6 md:flex-row lg:gap-x-48"
+      >
         <Card title="In Viaggio" srcImage="/viaggio-sq.png">
-          <p>andremo di qua e di la</p><p>e anche un po di li</p>
+          <p>
+            andando alla scoperta dei magnifici paesaggi e delle rilassanti
+            spiagge dell'isola di Madeira, isola portoghese dell'Oceano
+            Atlantico.
+          </p>
         </Card>
         <Card title="A casa" srcImage="/acasa.jpg">
-          <p>ci servirebbe un po' di questo e di quello</p>
+          <p>
+            arredandola secondo le nostre necessità, aggiungendo qualche mobile,
+            elettrodomestico o suppellettile mancante.
+          </p>
         </Card>
-        <FlowerAngle
-          class="absolute bottom-0 right-0 mb-[-6rem] mr-[-2rem] h-32 w-32 fill-buttermilk-400 lg:mr-[-10rem] lg:h-64 lg:w-64"
-        />
+        <Card title="Per gli altri" srcImage="/smartino.png">
+          <p>
+            Grati di avere una casa e di poterla rendere accogliente,
+            devolveremo inoltre una parte dei contributi che riceveremo alla
+            <a
+              class="underline hover:cursor-pointer"
+              href="https://www.smartinocampo.it/"
+              >Comunità di San Martino al Campo</a
+            >, che da più di 50 anni sostiene nella nostra città le persone più
+            bisognose, facendosi casa di chi casa non ha.
+          </p>
+        </Card>
       </div>
     </div>
     <div class="mt-16">
