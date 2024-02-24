@@ -6,47 +6,44 @@ import Regalo from "./Regalo.astro";
 ---
 
 <div
-  class="flex min-h-screen flex-col items-center justify-center gap-2 p-10 lg:p-40"
+  class="flex min-h-screen flex-col justify-center gap-2 text-wrap p-10 lg:p-40"
 >
-  <div class="flex flex-col items-center justify-center text-2xl">
-    <div>
-      <h3 class="mb-4 font-display text-5xl">Lista nozze</h3>
-      <p class="mb-8">
-        La nostra gioia è grande! Non vediamo l'ora di condividere con voi quel
-        giorno per noi così importante. La vostra presenza e vicinanza, il
-        vostro affetto e il vostro sostegno sono il regalo più prezioso che
-        potremo ricevere per iniziare a costruire la nostra famiglia. Se avete
-        piacere di partecipare anche con un dono, ne faremo buon uso…
-      </p>
-      <div
-        class="flex flex-col flex-wrap items-start justify-around gap-6 md:flex-row lg:gap-x-48"
-      >
-        <Card title="In Viaggio" srcImage="/viaggio-sq.png">
-          <p>
-            andando alla scoperta dei magnifici paesaggi e delle rilassanti
-            spiagge dell'isola di Madeira, isola portoghese dell'Oceano
-            Atlantico.
-          </p>
-        </Card>
-        <Card title="A casa" srcImage="/acasa.jpg">
-          <p>
-            arredandola secondo le nostre necessità, aggiungendo qualche mobile,
-            elettrodomestico o suppellettile mancante.
-          </p>
-        </Card>
-        <Card title="Per gli altri" srcImage="/smartino.png">
-          <p>
-            Grati di avere una casa e di poterla rendere accogliente,
-            devolveremo inoltre una parte dei contributi che riceveremo alla
-            <a
-              class="underline hover:cursor-pointer"
-              href="https://www.smartinocampo.it/"
-              >Comunità di San Martino al Campo</a
-            >, che da più di 50 anni sostiene nella nostra città le persone più
-            bisognose, facendosi casa di chi casa non ha.
-          </p>
-        </Card>
-      </div>
+  <div class="flex flex-col justify-center text-2xl">
+    <h3 class="mb-4 font-display text-5xl">Lista nozze</h3>
+    <p class="mb-8 w-full text-wrap px-2">
+      La nostra gioia è grande! Non vediamo l'ora di condividere con voi quel
+      giorno per noi così importante. La vostra presenza e vicinanza, il vostro
+      affetto e il vostro sostegno sono il regalo più prezioso che potremo
+      ricevere per iniziare a costruire la nostra famiglia. Se avete piacere di
+      partecipare anche con un dono, ne faremo buon uso…
+    </p>
+    <div
+      class="flex flex-col flex-wrap items-start justify-around gap-6 md:flex-row lg:gap-x-48"
+    >
+      <Card title="In Viaggio" srcImage="/viaggio-sq.png">
+        <p>
+          andando alla scoperta dei magnifici paesaggi e delle rilassanti
+          spiagge dell'isola di Madeira, isola portoghese dell'Oceano Atlantico.
+        </p>
+      </Card>
+      <Card title="A casa" srcImage="/acasa.jpg">
+        <p>
+          arredandola secondo le nostre necessità, aggiungendo qualche mobile,
+          elettrodomestico o suppellettile mancante.
+        </p>
+      </Card>
+      <Card title="Per gli altri" srcImage="/smartino.png">
+        <p>
+          Grati di avere una casa e di poterla rendere accogliente, devolveremo
+          inoltre una parte dei contributi che riceveremo alla
+          <a
+            class="underline hover:cursor-pointer"
+            href="https://www.smartinocampo.it/"
+            >Comunità di San Martino al Campo</a
+          >, che da più di 50 anni sostiene nella nostra città le persone più
+          bisognose, facendosi casa di chi casa non ha.
+        </p>
+      </Card>
     </div>
     <div class="mt-16">
       <Regalo />
