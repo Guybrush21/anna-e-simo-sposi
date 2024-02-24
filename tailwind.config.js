@@ -8,6 +8,7 @@ export default {
       backgroundImage: {
         annaesimo: "url(/as-header.jpg)",
         angle: "url(/lavanda-angle.png)",
+        lavandaCircle: "url(/lav-circle.svg)",
       },
       fontFamily: {
         display: [
