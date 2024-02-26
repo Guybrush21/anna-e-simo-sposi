@@ -7,33 +7,39 @@ import Title from "./Title.astro";
 ---
 
 <div
-  class="flex min-h-screen flex-col justify-center gap-2 text-wrap p-10 lg:p-40"
+  class="flex min-h-screen flex-col justify-center gap-10 text-wrap p-10 lg:p-40"
 >
   <div class="flex flex-col justify-center text-2xl">
-    <Title title="" />
-    <p class="mb-8 mt-12 w-full text-wrap px-2">
-      La nostra gioia è grande! Non vediamo l'ora di condividere con voi quel
-      giorno per noi così importante. La vostra presenza e vicinanza, il vostro
-      affetto e il vostro sostegno sono il regalo più prezioso che potremo
-      ricevere per iniziare a costruire la nostra famiglia. Se avete piacere di
-      partecipare anche con un dono, ne faremo buon uso…
-    </p>
+    <div class="relative mb-24">
+      <img src="/decor-2.png" class="absolute -top-36 left-28 w-12 rotate-90" />
+      <p class="px-2">
+        La nostra gioia è grande! Non vediamo l'ora di condividere con voi quel
+        giorno per noi così importante. La vostra presenza e vicinanza, il
+        vostro affetto e il vostro sostegno sono il regalo più prezioso che
+        potremo ricevere per iniziare a costruire la nostra famiglia. Se avete
+        piacere di partecipare anche con un dono, ne faremo buon uso…
+      </p>
+      <img
+        src="/decor-2.png"
+        class="absolute -bottom-36 right-28 w-12 -rotate-90"
+      />
+    </div>
     <div
-      class="flex flex-col flex-wrap items-start justify-around gap-6 md:flex-row lg:gap-x-48"
+      class="flex flex-col flex-wrap items-start justify-around gap-6 gap-y-24 md:flex-row lg:gap-x-48"
     >
-      <Card title="In Viaggio" srcImage="/viaggio-sq.png">
+      <Card title="in viaggio" srcImage="/viaggio-sq.png">
         <p>
-          andando alla scoperta dei magnifici paesaggi e delle rilassanti
+          Andando alla scoperta dei magnifici paesaggi e delle rilassanti
           spiagge dell'isola di Madeira, isola portoghese dell'Oceano Atlantico.
         </p>
       </Card>
-      <Card title="A casa" srcImage="/acasa.jpg">
+      <Card title="a casa" srcImage="/acasa.jpg">
         <p>
-          arredandola secondo le nostre necessità, aggiungendo qualche mobile,
+          Arredandola secondo le nostre necessità, aggiungendo qualche mobile,
           elettrodomestico o suppellettile mancante.
         </p>
       </Card>
-      <Card title="Per gli altri" srcImage="/smartino.png">
+      <Card title="per gli altri" srcImage="/smartino.png">
         <p>
           Grati di avere una casa e di poterla rendere accogliente, devolveremo
           inoltre una parte dei contributi che riceveremo alla

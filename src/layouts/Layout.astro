@@ -49,10 +49,11 @@ const { pageTitle } = Astro.props;
     <ViewTransitions />
   </head>
   <body
-    class="flex flex-col bg-gradient-to-b from-yellow-200 to-purple-400 font-sans text-buttermilk-600"
+    class="flex flex-col bg-gradient-to-b from-buttermilk-100 to-lavanda-300 font-sans text-lavanda-800"
   >
     <Header />
-    <main>
+
+    <main class="container mx-auto">
       <slot />
     </main>
     <Footer />

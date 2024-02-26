@@ -3,10 +3,10 @@ const { title, srcImage, text } = Astro.props;
 import Title from "./Title.astro";
 ---
 
-<div class="flex flex-col items-center justify-center gap-2 py-24 lg:max-w-64">
+<div class="flex flex-col items-center justify-center gap-2 lg:max-w-64">
   <img
     src={srcImage}
-    class="max-w-64 rounded-full object-fill shadow-lg shadow-buttermilk-700"
+    class="shadow-lavnda-300 max-w-64 rounded-full object-fill shadow-lg"
   />
   <Title title={title} class="self-start" />
   <slot />

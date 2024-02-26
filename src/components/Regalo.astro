@@ -3,15 +3,24 @@
 ---
 
 <div
-  class="lg:p40 flex min-h-screen flex-col items-center justify-center gap-4 p-10 text-center text-3xl text-buttermilk-200"
+  class="lg:p40 flex min-h-screen flex-col items-center justify-center gap-4 p-10 text-center text-3xl"
 >
   <p>
     Insomma, se tutto vi piace e volete contribuire, potete farlo tramite
     bonifico bancario al seguente IBAN:
   </p>
-  <p class="select-all rounded p-2 font-mono text-3xl ring-2 ring-lavanda-400">
-    ITH031X000000000000
+  <p
+    class="cursor-pointer select-all rounded border-2 border-lavanda-400 p-2 font-mono text-3xl"
+  >
+    ITH031X000000000001
   </p>
   <p class="mt-8 font-extrabold uppercase">Grazie di cuore!</p>
-  <p class="animate-pulse text-9xl">♥</p>
+  <div class="relative flex justify-center">
+    <p
+      class="absolute top-0 animate-[ping_3s_ease-in-out_infinite] font-display text-9xl text-buttermilk-100 opacity-70"
+    >
+      ♥
+    </p>
+    <p class="absolute top-0 font-display text-9xl text-lavanda-700">♥</p>
+  </div>
 </div>
