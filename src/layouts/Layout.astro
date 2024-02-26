@@ -1,7 +1,6 @@
 ---
 import { ViewTransitions } from "astro:transitions";
-import Header from "../components/Header.astro";
-import Footer from "../components/Footer.astro";
+
 import FlowerNode from "../components/decors/FlowerNode.astro";
 const { pageTitle } = Astro.props;
 ---
@@ -51,10 +50,6 @@ const { pageTitle } = Astro.props;
   <body
     class="flex flex-col scroll-smooth bg-gradient-to-b from-buttermilk-100 to-lavanda-300 font-sans text-lavanda-800"
   >
-    <main class="h-screen snap-y snap-mandatory overflow-scroll">
-      <Header />
-      <slot />
-      <Footer />
-    </main>
-  </body>
+    <slot/> 
+     </body>
 </html>

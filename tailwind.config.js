@@ -5,10 +5,14 @@ export default {
   content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
   theme: {
     extend: {
+      scale: {
+        "-1": "-1",
+      },
       backgroundImage: {
         annaesimo: "url(/as-header.jpg)",
         angle: "url(/lavanda-angle.png)",
         lavandaCircle: "url(/lav-circle.svg)",
+        noise: "url(/noise.svg)",
       },
       fontFamily: {
         display: [

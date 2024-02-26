@@ -3,12 +3,24 @@ import Annuncio from "../components/Annuncio.astro";
 import Lista from "../components/Lista.astro";
 import Regalo from "../components/Regalo.astro";
 import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
 const pageTitle = "Anna & Simo";
 ---
 
 <Layout pageTitle={pageTitle}>
-  <Annuncio />
+  <main class="h-screen snap-y snap-mandatory overflow-scroll">
+    <div class="snap-start">
+      <Header />
+    </div>
+    <div class="snap-start">
+      <Annuncio />
+    </div>
+    <div class="snap-start">
+      <Lista />
+      <Regalo />
 
-  <Lista />
-  <Regalo />
+      <Footer />
+    </div>
+  </main>
 </Layout>
