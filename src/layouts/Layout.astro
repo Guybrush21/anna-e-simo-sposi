@@ -49,13 +49,12 @@ const { pageTitle } = Astro.props;
     <ViewTransitions />
   </head>
   <body
-    class="flex flex-col bg-gradient-to-b from-buttermilk-100 to-lavanda-300 font-sans text-lavanda-800"
+    class="flex flex-col scroll-smooth bg-gradient-to-b from-buttermilk-100 to-lavanda-300 font-sans text-lavanda-800"
   >
-    <Header />
-
-    <main class="container mx-auto">
+    <main class="h-screen snap-y snap-mandatory overflow-scroll">
+      <Header />
       <slot />
+      <Footer />
     </main>
-    <Footer />
   </body>
 </html>
