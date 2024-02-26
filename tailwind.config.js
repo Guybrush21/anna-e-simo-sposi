@@ -12,10 +12,13 @@ export default {
       },
       fontFamily: {
         display: [
+          "Courgette",
           "FreestyleScript",
-          "Crimson Text",
+          "cursive",
           ...defaultTheme.fontFamily.sans,
         ],
+        pynion: "Pinyon Script",
+        decorative: "Oleo Script",
         sans: ['"Crimson Text"', "sans-serif"],
       },
       colors: {
